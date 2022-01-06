@@ -2,7 +2,7 @@
 
 # !!! Before you run rake db:migrate, remember to fill out the other migration files -- otherwise you'll get an error resulting from the blank migration files.
 
-class HauntedHouses < ActiveRecord::Migration[4.2] #inherits from ActiveRecord::Base
+class CreateHauntedHouses < ActiveRecord::Migration[4.2] #inherits from ActiveRecord::Base
     def change
         create_table :haunted_houses do |t|
             t.string :name 
@@ -10,7 +10,7 @@ class HauntedHouses < ActiveRecord::Migration[4.2] #inherits from ActiveRecord::
             t.string :description
             t.string :theme
             t.integer :price
-            t.booleon :family_friendly
+            t.boolean :family_friendly
             t.datetime :opening_date
             t.datetime :closing_date
 
